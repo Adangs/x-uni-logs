@@ -3,7 +3,7 @@ x-uni-logs
 
 ### 引入
 
-`uni-app`小程序项目`main.js`引入
+`uni-app`小程序项目`main.js`
 ```js
 import { $XReport, $XTrack } from './utils/x-uni-log'
 
