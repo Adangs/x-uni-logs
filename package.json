@@ -1,0 +1,33 @@
+{
+  "name": "x-uni-logs",
+  "version": "1.0.0",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "eslint": "eslint src --ext .js",
+    "fix": "eslint src --ext .js,.vue --fix"
+  },
+  "pre-commit": [
+    "fix"
+  ],
+  "author": "FED Adang",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-eslint": "^10.0.1",
+    "eslint": "^5.12.1",
+    "eslint-plugin-vue": "^6.2.2",
+    "gulp": "^4.0.2",
+    "gulp-oss-sync": "^1.0.4",
+    "gulp-util": "^3.0.8"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "src/**/*.{js,vue}": [
+      "eslint --fix",
+      "git add"
+    ]
+  }
+}
