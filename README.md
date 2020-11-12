@@ -9,7 +9,6 @@ import { $XReport, $XTrack } from './utils/x-uni-log'
 
 // 初始化
 Vue.prototype.$XTrack = $XTrack
-Vue.prototype.$XTrack = $XTrack
 $XReport.init({
   api: 'http://www.xxx.com/api/logs' // 接收日志的api地址
 })
